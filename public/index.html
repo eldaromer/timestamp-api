@@ -1,8 +1,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Timestamp API</title>
     <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .centered {
             text-align: center;
@@ -28,15 +30,49 @@
             margin: 0 auto;
             margin-top: 2rem;
         }
+        
+        a {
+          color:inherit;
+          text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
     <div class = "line content-section">
-        <h2>Free Code Camp Basejump:</h2>
-        <h3>Timestamp Microservice</h3>
+        <h1>Free Code Camp Basejump:</h2>
+        <h2>Timestamp Microservice</h3>
     </div>
     <br>
+    <div class = "content-section">
+        <h3>Example usage:</h3>
+        <code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code><br>
+        <code>https://timestamp-ms.herokuapp.com/1450137600</code>
+        <h3>Example output:</h3>
+        <code>
+            {
+              "unix": 1450137600,
+              "natural": "December 15, 2015"
+            }
+        </code>
+    </div>
 
 </body>
+
+<br>
+<br>
+
+<footer>
+    <div class="container">
+        <div class="row vcenter">
+            <div class="col-lg-4 col-lg-offset-4 col-lg-12">
+                <div class="pull-right">
+                    <a target="_blank" href="https://www.linkedin.com/in/omer-e-6942b3121/"><i class="fa fa-linkedin fa-3x"></i></a>
+                    <a target="_blank" href="https://github.com/eldaromer"><i class="fa fa-github fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </html>
