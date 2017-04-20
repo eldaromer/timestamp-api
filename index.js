@@ -70,4 +70,8 @@ app.get('/:date', function(req, res) {
     
 })
 
+app.get('*', function(req, res) {
+    res.redirect('/');
+});
+
 app.listen(8080);
